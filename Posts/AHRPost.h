@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSDate *timeStamp;
 @property (nonatomic, strong) UIColor *postColor;
+@property (nonatomic, strong) UIImage *photo;
 
 - (id) initWithDictionary:(NSDictionary *)dictionary;
 

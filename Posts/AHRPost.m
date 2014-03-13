@@ -19,6 +19,7 @@
         self.content = [dictionary objectForKey:@"content"];
         self.timeStamp = [dictionary objectForKey:@"timeStamp"];
         self.postColor = [dictionary objectForKey:@"postColor"];
+        self.photo = [dictionary objectForKey:@"photo"];
     }
     
     return self;
@@ -32,6 +33,7 @@
     [encoder encodeObject:self.content forKey:@"content"];
     [encoder encodeObject:self.timeStamp forKey:@"timeStamp"];
     [encoder encodeObject:self.postColor forKey:@"color"];
+    [encoder encodeObject:self.photo forKey:@"photo"];
 }
 
 // reading from disk
@@ -43,6 +45,7 @@
         self.content = [decoder decodeObjectForKey:@"content"];
         self.timeStamp = [decoder decodeObjectForKey:@"timeStamp"];
         self.postColor = [decoder decodeObjectForKey:@"color"];
+        self.photo = [decoder decodeObjectForKey:@"photo"];
     }
     return self;
 }
